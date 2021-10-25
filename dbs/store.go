@@ -28,7 +28,7 @@ func init() {
 	vjson := viper.New()
 	vjson.SetConfigName("mysql")
 	vjson.SetConfigType("json")
-	vjson.AddConfigPath("../config")
+	vjson.AddConfigPath("./config")
 
 	if err := vjson.ReadInConfig(); err != nil {
 		fmt.Println(err)
